@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		A03109B9203CDB7B00400910 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03109B8203CDB7B00400910 /* AppDelegate.swift */; };
 		A03109BB203CDB7B00400910 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A03109BA203CDB7B00400910 /* art.scnassets */; };
-		A03109BD203CDB7B00400910 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03109BC203CDB7B00400910 /* ViewController.swift */; };
+		A03109BD203CDB7B00400910 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03109BC203CDB7B00400910 /* ProductViewController.swift */; };
 		A03109C0203CDB7B00400910 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03109BE203CDB7B00400910 /* Main.storyboard */; };
 		A03109C2203CDB7B00400910 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A03109C1203CDB7B00400910 /* Assets.xcassets */; };
 		A03109C5203CDB7B00400910 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A03109C3203CDB7B00400910 /* LaunchScreen.storyboard */; };
+		A03109D1203CDCAA00400910 /* QRReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03109D0203CDCAA00400910 /* QRReaderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A03109B5203CDB7B00400910 /* ARQR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARQR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A03109B8203CDB7B00400910 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A03109BA203CDB7B00400910 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		A03109BC203CDB7B00400910 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A03109BC203CDB7B00400910 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		A03109BF203CDB7B00400910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A03109C1203CDB7B00400910 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A03109C4203CDB7B00400910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A03109C6203CDB7B00400910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A03109D0203CDCAA00400910 /* QRReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRReaderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		A03109B7203CDB7B00400910 /* ARQR */ = {
 			isa = PBXGroup;
 			children = (
-				A03109B8203CDB7B00400910 /* AppDelegate.swift */,
-				A03109BA203CDB7B00400910 /* art.scnassets */,
-				A03109BC203CDB7B00400910 /* ViewController.swift */,
-				A03109BE203CDB7B00400910 /* Main.storyboard */,
-				A03109C1203CDB7B00400910 /* Assets.xcassets */,
-				A03109C3203CDB7B00400910 /* LaunchScreen.storyboard */,
-				A03109C6203CDB7B00400910 /* Info.plist */,
+				A03109CE203CDC5700400910 /* ViewControllers */,
+				A03109CD203CDC2F00400910 /* Resources */,
+				A03109CC203CDC1200400910 /* General */,
 			);
 			path = ARQR;
+			sourceTree = "<group>";
+		};
+		A03109CC203CDC1200400910 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				A03109C6203CDB7B00400910 /* Info.plist */,
+				A03109B8203CDB7B00400910 /* AppDelegate.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		A03109CD203CDC2F00400910 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A03109CF203CDC6E00400910 /* Storyboards */,
+				A03109BA203CDB7B00400910 /* art.scnassets */,
+				A03109C1203CDB7B00400910 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A03109CE203CDC5700400910 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A03109BC203CDB7B00400910 /* ProductViewController.swift */,
+				A03109D0203CDCAA00400910 /* QRReaderViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A03109CF203CDC6E00400910 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A03109BE203CDB7B00400910 /* Main.storyboard */,
+				A03109C3203CDB7B00400910 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +175,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A03109BD203CDB7B00400910 /* ViewController.swift in Sources */,
+				A03109BD203CDB7B00400910 /* ProductViewController.swift in Sources */,
 				A03109B9203CDB7B00400910 /* AppDelegate.swift in Sources */,
+				A03109D1203CDCAA00400910 /* QRReaderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9K285RPTK7;
-				INFOPLIST_FILE = ARQR/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ARQR/General/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aboyko.ARQR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,7 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9K285RPTK7;
-				INFOPLIST_FILE = ARQR/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ARQR/General/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aboyko.ARQR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
